@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/newButtontyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:exported="true"
+    android:orientation="vertical"
+    tools:context=".HighScoresActivity">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="monospace"
+        android:freezesText="true"
+        android:text="TicTacToe"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/p1wins"
+        style="@style/p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:freezesText="true"
+        android:text="Player 1 Wins: 0"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/p2wins"
+        style="@style/p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:freezesText="true"
+        android:text="Player 2 Wins: 0"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/aiwins"
+        style="@style/p1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:freezesText="true"
+        android:text="CPU Wins: 0"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/clean"
+        style="@style/p3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="2dp"
+
+        android:fontFamily="monospace"
+        android:text="CLEAN THE BOARD"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@android:color/holo_red_dark"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/mainMenu"
+        style="@style/p3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="monospace"
+        android:text="MAIN MENU"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@android:color/holo_red_dark"
+        android:textSize="25dp" />
+</LinearLayout>

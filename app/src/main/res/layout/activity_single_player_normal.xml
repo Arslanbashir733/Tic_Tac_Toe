@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEFEFF"
+    tools:context=".SinglePlayerEasy">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playerchance"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:padding="70dp">
+
+        <TableRow android:background="#D6E6EA">
+
+            <Button
+                android:id="@+id/b00"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#FEFEFF"
+                android:onClick="b00"
+                android:padding="1dp"
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/b01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#FEFEFF"
+
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/b02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#FEFEFF"
+
+                android:textSize="60sp" />
+        </TableRow>
+
+        <TableRow
+
+            android:background="#D6E6EA">
+
+            <Button
+                android:id="@+id/b10"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#FEFEFF"
+
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/b11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#FEFEFF"
+
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/b12"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#FEFEFF"
+
+                android:textSize="60sp" />
+        </TableRow>
+
+        <TableRow
+
+            android:background="#D6E6EA">
+
+            <Button
+                android:id="@+id/b20"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="#FEFEFF"
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/b21"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="#FEFEFF"
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/b22"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="#FEFEFF"
+
+                android:textSize="60sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/playerchance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="52dp"
+        android:text="0 wins"
+        android:textColor="#3A98D4"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/winview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/playerchance"
+        android:layout_centerHorizontal="true"
+        android:text="0 wins"
+        android:textColor="#79CADC"
+        android:textSize="18sp"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chancesetter"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:text="Reset" />
+
+    <TextView
+        android:id="@+id/chancesetter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:text="1 PLAYER"
+        android:textColor="#4A6884"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/drawview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/playerchance"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:text="0 draws"
+        android:textColor="#4A6884"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/playerchance"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="-52dp"
+
+        android:text="X"
+        android:textColor="#3A98D4"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:text="O"
+
+        android:textColor="#79CADC"
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btn_reset"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="19dp"
+        android:text="Back" />
+
+</RelativeLayout>

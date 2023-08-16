@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/newButtontyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:exported="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="monospace"
+        android:freezesText="true"
+        android:text="TicTacToe"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/easy"
+        style="@style/p3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="EASY"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@android:color/holo_red_dark"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <Button
+        android:id="@+id/normal"
+        style="@style/p3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="monospace"
+        android:text="NORMAL"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@android:color/holo_red_dark"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <Button
+        android:id="@+id/hard"
+        style="@style/p3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="HARD "
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@android:color/holo_red_dark"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <Button
+        android:id="@+id/mainMenu"
+        style="@style/p3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+
+        android:fontFamily="monospace"
+        android:text="MAIN MENU"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@android:color/holo_red_dark"
+        android:textSize="25dp" />
+
+</LinearLayout>
+

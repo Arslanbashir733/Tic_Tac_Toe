@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.TicTacToe" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+
+    <style name="Theme.TicTacToe" parent="Base.Theme.TicTacToe" />
+
+
+    <style name="newButtontyle" parent="@android:style/Widget.Button"
+        tools:ignore="MissingPrefix">
+        <item name="android:background">#5ac7f9</item>
+    </style>
+
+    <style name="Button" parent="@android:style/Widget.Button"
+        tools:ignore="MissingPrefix">
+        <item name="android:background">#2ab7f4</item>
+    </style>
+
+    <style name="p2" parent="@android:style/Widget.TextView"
+        tools:ignore="MissingPrefix">
+        <item name="android:textColor">#e33567</item>
+        <item name="android:background">#ffffff</item>
+
+    </style>
+
+    <style name="p1" parent="@android:style/Widget.Button"
+        tools:ignore="MissingPrefix">
+        <item name="android:background">#ffff</item>
+
+    </style>
+
+    <style name="p3" parent="@android:style/Widget.Button"
+        tools:ignore="MissingPrefix">
+        <item name="android:textColor">#26577c</item>
+
+    </style>
+
+    <style name="title" parent="@android:style/Widget.TextView"
+        tools:ignore="MissingPrefix">
+        <item name="android:textColor">#ffffff</item>
+
+    </style>
+</resources>

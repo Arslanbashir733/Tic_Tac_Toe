@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/newButtontyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:exported="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="monospace"
+        android:freezesText="true"
+        android:text="TicTacToe"
+        android:textSize="50sp" />
+
+    <Button
+        android:id="@+id/singlePlayer"
+        style="@style/p3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="SINGLEPLAYER"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@android:color/holo_red_dark"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <Button
+        android:id="@+id/multiPlayer"
+        style="@style/p3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="monospace"
+        android:text="MULTIPLAYER"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@android:color/holo_red_dark"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="180dp" />
+
+    <Button
+        android:id="@+id/highscore"
+        style="@style/p3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="150dp"
+        android:fontFamily="monospace"
+        android:text="HIGHSCORE"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHighlight="@android:color/holo_red_dark"
+        android:textSize="25dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="180dp" />
+
+</LinearLayout>
+
