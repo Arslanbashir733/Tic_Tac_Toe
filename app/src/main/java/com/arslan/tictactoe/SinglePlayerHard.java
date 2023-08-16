@@ -18,7 +18,6 @@ public class SinglePlayerHard extends AppCompatActivity implements View.OnClickL
     private boolean player1Turn = true;
     private int chancecount = 0;
     private TextView chance;
-
     private int player1Points = 0;
     private int player2Points = 0;
     private int draw = 0;
@@ -32,10 +31,10 @@ public class SinglePlayerHard extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_single_player_hard);
 
-        textViewPlayer1 = (TextView) findViewById(R.id.playerchance);
-        chance = (TextView) findViewById(R.id.chancesetter);
-        textViewPlayer2 = (TextView) findViewById(R.id.winview);
-        textViewdraw = (TextView) findViewById(R.id.drawview);
+        textViewPlayer1 = findViewById(R.id.playerchance);
+        chance = findViewById(R.id.chancesetter);
+        textViewPlayer2 = findViewById(R.id.winview);
+        textViewdraw = findViewById(R.id.drawview);
 
         //connect all the buttons with their ids(giving reference to all buttons)
         for (int i = 0; i < 3; i++) {
@@ -231,24 +230,19 @@ public class SinglePlayerHard extends AppCompatActivity implements View.OnClickL
                 } else if (!buttons[0][2].getText().equals("") && !buttons[1][1].getText().equals("") && !buttons[2][0].getText().equals("")) {
                     randomcorner();
                 } else {
-                    int flag2 = 0;
                     if (checkallo()) {
 
                         contineouscheck();
                     } else if (checkallx()) {
-                        flag2 = 1;
                         contineouscheck();
                     } else {
                         randombutton();
                     }
                 }
             } else {
-                int flag2 = 0;
                 if (checkallo()) {
-                    flag2 = 1;
                     contineouscheck();
                 } else if (checkallx()) {
-                    flag2 = 1;
                     contineouscheck();
                 } else {
                     randombutton();
@@ -284,12 +278,9 @@ public class SinglePlayerHard extends AppCompatActivity implements View.OnClickL
                     }
                 }
             } else {
-                int flag2 = 0;
                 if (checkallo()) {
-                    flag2 = 1;
                     contineouscheck();
                 } else if (checkallx()) {
-                    flag2 = 1;
                     contineouscheck();
                 } else {
                     randombutton();
@@ -299,153 +290,124 @@ public class SinglePlayerHard extends AppCompatActivity implements View.OnClickL
             if (buttons[1][0].getText().equals("x") || buttons[0][1].getText().equals("x") || buttons[1][2].getText().equals("x") || buttons[2][1].getText().equals("x")) {
                 Log.d("anywhere", "else part called");
                 centerchance(buttons[1][1]);
-                int flag2 = 0;
                 if (checkallo()) {
-                    flag2 = 1;
                     contineouscheck();
                 } else if (checkallx()) {
-                    flag2 = 1;
                     contineouscheck();
-                } else {
-
                 }
             }
         }
     }
 
     private boolean checkallo() {
-        int flag = 0;//if flag 0 means chance nahi chali
+        //if flag 0 means chance nahi chali
         for (int i = 0; i < 3; i++) {
-            if ((buttons[i][0].getText().equals("o") && buttons[i][1].getText().equals("o") && (buttons[i][2].getText().equals("")) && flag == 0)) {
+            if (buttons[i][0].getText().equals("o") && buttons[i][1].getText().equals("o") && buttons[i][2].getText().equals("")) {
                 seto(buttons[i][2]);
-                flag = 1;
                 return true;
             }
-            if ((buttons[i][0].getText().equals("o") && buttons[i][2].getText().equals("o") && (buttons[i][1].getText().equals("")) && flag == 0)) {
+            if (buttons[i][0].getText().equals("o") && buttons[i][2].getText().equals("o") && buttons[i][1].getText().equals("")) {
                 seto(buttons[i][1]);
-                flag = 1;
                 return true;
             }
-            if ((buttons[i][1].getText().equals("o") && buttons[i][2].getText().equals("o") && (buttons[i][0].getText().equals("")) && flag == 0)) {
+            if (buttons[i][1].getText().equals("o") && buttons[i][2].getText().equals("o") && buttons[i][0].getText().equals("")) {
                 seto(buttons[i][0]);
-                flag = 1;
                 return true;
             }
         }
         for (int i = 0; i < 3; i++) {
-            if ((buttons[0][i].getText().equals("o") && buttons[1][i].getText().equals("o") && (buttons[2][i].getText().equals("")) && flag == 0)) {
+            if (buttons[0][i].getText().equals("o") && buttons[1][i].getText().equals("o") && buttons[2][i].getText().equals("")) {
                 seto(buttons[2][i]);
-                flag = 1;
                 return true;
             }
-            if ((buttons[0][i].getText().equals("o") && buttons[2][i].getText().equals("o") && (buttons[1][i].getText().equals("")) && flag == 0)) {
+            if (buttons[0][i].getText().equals("o") && buttons[2][i].getText().equals("o") && buttons[1][i].getText().equals("")) {
                 seto(buttons[1][i]);
-                flag = 1;
                 return true;
             }
-            if ((buttons[1][i].getText().equals("o") && buttons[2][i].getText().equals("o") && (buttons[0][i].getText().equals("")) && flag == 0)) {
+            if (buttons[1][i].getText().equals("o") && buttons[2][i].getText().equals("o") && buttons[0][i].getText().equals("")) {
                 seto(buttons[0][1]);
-                flag = 1;
                 return true;
             }
         }
-        if ((buttons[0][0].getText().equals("o") && buttons[1][1].getText().equals("o") && (buttons[2][2].getText().equals("")) && flag == 0)) {
+        if (buttons[0][0].getText().equals("o") && buttons[1][1].getText().equals("o") && buttons[2][2].getText().equals("")) {
             seto(buttons[2][2]);
-            flag = 1;
             return true;
         }
-        if ((buttons[0][0].getText().equals("o") && buttons[2][2].getText().equals("o") && (buttons[1][1].getText().equals("")) && flag == 0)) {
+        if (buttons[0][0].getText().equals("o") && buttons[2][2].getText().equals("o") && buttons[1][1].getText().equals("")) {
             seto(buttons[1][1]);
-            flag = 1;
             return true;
         }
-        if ((buttons[2][2].getText().equals("o") && buttons[1][1].getText().equals("o") && (buttons[0][0].getText().equals("")) && flag == 0)) {
+        if (buttons[2][2].getText().equals("o") && buttons[1][1].getText().equals("o") && buttons[0][0].getText().equals("")) {
             seto(buttons[0][0]);
-            flag = 1;
             return true;
         }
-        if ((buttons[0][2].getText().equals("o") && buttons[1][1].getText().equals("o") && (buttons[2][0].getText().equals("")) && flag == 0)) {
+        if (buttons[0][2].getText().equals("o") && buttons[1][1].getText().equals("o") && buttons[2][0].getText().equals("")) {
             seto(buttons[2][0]);
-            flag = 1;
             return true;
         }
-        if ((buttons[1][1].getText().equals("o") && buttons[2][0].getText().equals("o") && (buttons[0][2].getText().equals("")) && flag == 0)) {
+        if (buttons[1][1].getText().equals("o") && buttons[2][0].getText().equals("o") && buttons[0][2].getText().equals("")) {
             seto(buttons[0][2]);
-            flag = 1;
             return true;
         }
-        if ((buttons[2][0].getText().equals("o") && buttons[0][2].getText().equals("o") && (buttons[1][1].getText().equals("")) && flag == 0)) {
+        if (buttons[2][0].getText().equals("o") && buttons[0][2].getText().equals("o") && buttons[1][1].getText().equals("")) {
             seto(buttons[1][1]);
-            flag = 1;
             return true;
         }
         return false;
     }
 
     private boolean checkallx() {
-        int flag = 0;//if flag 0 means chance nahi chali
+        //if flag 0 means chance nahi chali
         for (int i = 0; i < 3; i++) {
-            if ((buttons[i][0].getText().equals("x") && buttons[i][1].getText().equals("x") && (buttons[i][2].getText().equals("")) && flag == 0)) {
+            if (buttons[i][0].getText().equals("x") && buttons[i][1].getText().equals("x") && buttons[i][2].getText().equals("")) {
                 seto(buttons[i][2]);
-                flag = 1;
                 return true;
             }
-            if ((buttons[i][0].getText().equals("x") && buttons[i][2].getText().equals("x") && (buttons[i][1].getText().equals("")) && flag == 0)) {
+            if (buttons[i][0].getText().equals("x") && buttons[i][2].getText().equals("x") && buttons[i][1].getText().equals("")) {
                 seto(buttons[i][1]);
-                flag = 1;
                 return true;
             }
-            if ((buttons[i][1].getText().equals("x") && buttons[i][2].getText().equals("x") && (buttons[i][0].getText().equals("")) && flag == 0)) {
+            if (buttons[i][1].getText().equals("x") && buttons[i][2].getText().equals("x") && buttons[i][0].getText().equals("")) {
                 seto(buttons[i][0]);
-                flag = 1;
                 return true;
             }
         }
         for (int i = 0; i < 3; i++) {
-            if ((buttons[0][i].getText().equals("x") && buttons[1][i].getText().equals("x") && (buttons[2][i].getText().equals("")) && flag == 0)) {
+            if (buttons[0][i].getText().equals("x") && buttons[1][i].getText().equals("x") && buttons[2][i].getText().equals("")) {
                 seto(buttons[2][i]);
-                flag = 1;
                 return true;
             }
-            if ((buttons[0][i].getText().equals("x") && buttons[2][i].getText().equals("x") && (buttons[1][i].getText().equals("")) && flag == 0)) {
+            if (buttons[0][i].getText().equals("x") && buttons[2][i].getText().equals("x") && buttons[1][i].getText().equals("")) {
                 seto(buttons[1][i]);
-                flag = 1;
                 return true;
             }
-            if ((buttons[1][i].getText().equals("x") && buttons[2][i].getText().equals("x") && (buttons[0][i].getText().equals("")) && flag == 0)) {
+            if (buttons[1][i].getText().equals("x") && buttons[2][i].getText().equals("x") && buttons[0][i].getText().equals("")) {
                 seto(buttons[0][i]);
-                flag = 1;
                 return true;
             }
         }
-        if ((buttons[0][0].getText().equals("x") && buttons[1][1].getText().equals("x") && (buttons[2][2].getText().equals("")) && flag == 0)) {
+        if (buttons[0][0].getText().equals("x") && buttons[1][1].getText().equals("x") && buttons[2][2].getText().equals("")) {
             seto(buttons[2][2]);
-            flag = 1;
             return true;
         }
-        if ((buttons[0][0].getText().equals("x") && buttons[2][2].getText().equals("x") && (buttons[1][1].getText().equals("")) && flag == 0)) {
+        if (buttons[0][0].getText().equals("x") && buttons[2][2].getText().equals("x") && buttons[1][1].getText().equals("")) {
             seto(buttons[1][1]);
-            flag = 1;
             return true;
         }
-        if ((buttons[2][2].getText().equals("x") && buttons[1][1].getText().equals("x") && (buttons[0][0].getText().equals("")) && flag == 0)) {
+        if (buttons[2][2].getText().equals("x") && buttons[1][1].getText().equals("x") && buttons[0][0].getText().equals("")) {
             seto(buttons[0][0]);
-            flag = 1;
             return true;
         }
-        if ((buttons[0][2].getText().equals("x") && buttons[1][1].getText().equals("x") && (buttons[2][0].getText().equals("")) && flag == 0)) {
+        if (buttons[0][2].getText().equals("x") && buttons[1][1].getText().equals("x") && buttons[2][0].getText().equals("")) {
             seto(buttons[2][0]);
-            flag = 1;
             return true;
         }
-        if ((buttons[1][1].getText().equals("x") && buttons[2][0].getText().equals("x") && (buttons[0][2].getText().equals("")) && flag == 0)) {
+        if (buttons[1][1].getText().equals("x") && buttons[2][0].getText().equals("x") && buttons[0][2].getText().equals("")) {
             seto(buttons[0][2]);
-            flag = 1;
             return true;
         }
-        if ((buttons[2][0].getText().equals("x") && buttons[0][2].getText().equals("x") && (buttons[1][1].getText().equals("")) && flag == 0)) {
+        if (buttons[2][0].getText().equals("x") && buttons[0][2].getText().equals("x") && buttons[1][1].getText().equals("")) {
             seto(buttons[1][1]);
-            flag = 1;
             return true;
         }
         return false;

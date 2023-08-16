@@ -60,7 +60,7 @@
             android:layout_marginLeft="2dp"
             android:layout_marginTop="2dp"
             android:layout_weight="1"
-            android:background="@drawable/xoButton"
+            android:background="@drawable/xobuttons"
             android:freezesText="true"
             android:textAlignment="center"
             android:textSize="60sp" />
@@ -72,7 +72,7 @@
             android:layout_marginLeft="2dp"
             android:layout_marginTop="2dp"
             android:layout_weight="1"
-            android:background="@drawable/xoButton"
+            android:background="@drawable/xobuttons"
             android:freezesText="true"
             android:textAlignment="center"
             android:textSize="60sp" />
@@ -84,7 +84,7 @@
             android:layout_marginLeft="2dp"
             android:layout_marginTop="2dp"
             android:layout_weight="1"
-            android:background="@drawable/xoButton"
+            android:background="@drawable/xobuttons"
             android:freezesText="true"
             android:textAlignment="center"
             android:textSize="60sp" />
@@ -105,7 +105,7 @@
             android:layout_marginLeft="2dp"
             android:layout_marginTop="2dp"
             android:layout_weight="1"
-            android:background="@drawable/xoButton"
+            android:background="@drawable/xobuttons"
             android:freezesText="true"
             android:textAlignment="center"
             android:textSize="60sp" />
@@ -117,7 +117,7 @@
             android:layout_marginLeft="2dp"
             android:layout_marginTop="2dp"
             android:layout_weight="1"
-            android:background="@drawable/xoButton"
+            android:background="@drawable/xobuttons"
             android:freezesText="true"
             android:textAlignment="center"
             android:textSize="60sp" />
@@ -129,7 +129,7 @@
             android:layout_marginLeft="2dp"
             android:layout_marginTop="2dp"
             android:layout_weight="1"
-            android:background="@drawable/xoButton"
+            android:background="@drawable/xobuttons"
             android:freezesText="true"
             android:textAlignment="center"
             android:textSize="60sp" />
@@ -151,7 +151,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginBottom="2dp"
             android:layout_weight="1"
-            android:background="@drawable/xoButton"
+            android:background="@drawable/xobuttons"
             android:freezesText="true"
             android:textAlignment="center"
             android:textSize="60sp" />
@@ -164,7 +164,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginBottom="2dp"
             android:layout_weight="1"
-            android:background="@drawable/xoButton"
+            android:background="@drawable/xobuttons"
             android:freezesText="true"
             android:textAlignment="center"
             android:textSize="60sp" />
@@ -177,7 +177,7 @@
             android:layout_marginTop="2dp"
             android:layout_marginBottom="2dp"
             android:layout_weight="1"
-            android:background="@drawable/xoButton"
+            android:background="@drawable/xobuttons"
             android:freezesText="true"
             android:textAlignment="center"
             android:textSize="60sp" />
